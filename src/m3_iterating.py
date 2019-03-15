@@ -222,6 +222,7 @@ def run_test_count_short_ones():
     print('Test 9 expected:', expected)
     print('       actual:  ', actual)
 
+
 def count_short_ones(seq_of_lists):
     """
     What comes in:  An sequence of sequences.
@@ -251,6 +252,7 @@ def count_short_ones(seq_of_lists):
         if len(seq_of_lists[k]) < 3:
             count = count + 1
     return count
+
 
 def run_test_draw_circles():
     """ Tests the   draw_circles   function. """
@@ -328,9 +330,14 @@ def draw_circles(window, points, radius, color):
       :type color: str
     """
     # -------------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # DONE: 6. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    for k in range(len(points)):
+        circle = rg.Circle(points[k], radius)
+        circle.fill_color = color
+        circle.attach_to(window)
+        window.render(1)
 
 
 # -----------------------------------------------------------------------------
