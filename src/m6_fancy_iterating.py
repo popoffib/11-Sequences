@@ -395,7 +395,7 @@ def print_all_items_backwards(sequence):
     # DONE: 4. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-    for k in range(len(sequence) -1, -1, -1):
+    for k in range(len(sequence) - 1, -1, -1):
         print(sequence[k])
 
 
